@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Home from './components/Home/Home';
-
-if (module.hot) require('./styles/main.scss');
+require('./styles/main.scss');
 
 class Main extends Component {
   render() {
@@ -14,5 +13,5 @@ class Main extends Component {
   }
 }
 
-module.hot.accept();
+if (module.hot) module.hot.accept();
 ReactDOM.render(<Main/>, document.getElementById('app'));
