@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Home from './components/Home/Home';
-require('./styles/main.scss');
+
+if (module.hot) require('./styles/main.scss');
 
 class Main extends Component {
   render() {
