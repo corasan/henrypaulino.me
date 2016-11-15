@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Damion');
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.name-title {
+  color: #F20732;
+  font-size: 66px;
+  font-weight: normal;
+  font-family: 'Damion', cursive;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
