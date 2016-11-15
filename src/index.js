@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+require('./styles/main.scss');
 
 class Main extends Component {
   render() {
     return (
-      <h1>Henry Paulino</h1>
+      <h1 id="test">Henry Paulino</h1>
     );
   }
 }
