@@ -7,7 +7,7 @@ const init = {
 
 const store = (state=init, action) => {
   switch(action.type) {
-    case 'HOME':
+    case 'RENDER_COMPONENT':
       return {
         ...state,
         render: action.component

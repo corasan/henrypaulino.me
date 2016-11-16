@@ -19,12 +19,11 @@ export default class Container extends Component {
   }
 
   render() {
-    console.log(this.props.component);
     return (
       <div className="container">
         <NavBar/>
 
-        <div>
+        <div className="content">
           {this.props.component}
         </div>
       </div>

@@ -1,6 +1,6 @@
-export const renderHome = (component) => {
+export const renderComponent = (component) => {
   return {
-    type: 'HOME',
+    type: 'RENDER_COMPONENT',
     component
   }
 }
