@@ -5,8 +5,8 @@ import { renderComponent } from '../../actions';
 const NavList = ({dispatch}) => {
   return (
     <ul>
-      <li><a href="#" onClick={() => dispatch(renderComponent(routes.home))}>About</a></li>
-      <li><a href="#" onClick={() => dispatch(renderComponent('projects'))}>Projects</a></li>
+      <li><a href="#" onClick={() => dispatch(renderComponent('About'))}>About</a></li>
+      <li><a href="#" onClick={() => dispatch(renderComponent('Projects'))}>Projects</a></li>
     </ul>
   );
 }
