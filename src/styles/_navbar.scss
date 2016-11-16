@@ -1,0 +1,25 @@
+.nav {
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  li {
+    a {
+      padding: 8px 16px 8px 16px;
+      background-color: blue;
+      text-decoration: none;
+      color: white;
+      display: block;
+      margin: 0;
+    }
+  }
+
+}
+
+.active {
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+}

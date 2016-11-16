@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
 import Container from './components/Container';
 import Home from './components/Home/Home';
-import NavBar from './components/Navigation/NavBar';
+import Navigator from './components/Navigator/Navigator';
+import store from './reducers';
 require('./styles/main.scss');
 
 class HenryPaulino extends Component {
   render() {
     return (
-      <Container>
-        <Home/>
-      </Container>
+      <Container/>
     );
   }
 }
 
 if (module.hot) module.hot.accept();
-ReactDOM.render(<HenryPaulino/>, document.getElementById('app'));
+
+render(
+  <Provider store={store}>
+    <HenryPaulino/>
+  </Provider>,
+  document.getElementById('app')
+);
