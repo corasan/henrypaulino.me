@@ -6,7 +6,7 @@ export default class Home extends Component {
       <div className="home-container">
         {/* <div className="home-content"> */}
           <h1 className="name-title">Henry Paulino</h1><br></br>
-          <h2 className="subtitle">I'm a Front End Developer and <br/>a design enthusiast</h2>
+          <h2 className="subtitle">I'm a Front End Developer and <br/>design enthusiast</h2>
         {/* </div> */}
       </div>
     )
