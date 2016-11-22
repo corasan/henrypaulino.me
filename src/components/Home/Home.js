@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 
 export default class Home extends Component {
+  componentDidMount() {
+    TweenMax.from('.name-title', 3.5, {opacity: 0});
+    TweenMax.from('.subtitle', 3.5, {opacity: 0, delay: 1});
+  }
+
+  componentWillUnmount() {
+    console.log('componentWillUnmount');
+  }
   render() {
     return (
       <div className="home-container">
@@ -10,3 +18,11 @@ export default class Home extends Component {
     )
   }
 }
+
+// class NameTitle extends Component {
+//   componentDidMount() {
+//       TweenMax.from(this.getDOMNode, 3.5, {opacity: 0});
+//   }
+//
+//
+// }
