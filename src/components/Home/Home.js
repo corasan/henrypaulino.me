@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 
 export default class Home extends Component {
+  componentDidMount() {
+    TweenMax.from('.name-title', 4, {opacity: 0});
+    TweenMax.from('.subtitle', 4, {opacity: 0, delay: 1});
+  }
+
+  componentWillUnmount() {}
+
   render() {
     return (
       <div className="home-container">
