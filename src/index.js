@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import { Provider } from 'react-redux';
-import Container from './components/Container';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import HenryPaulino from './components/app.js';
 import Home from './components/Home/Home';
-import Navigator from './components/Navigator/Navigator';
-import store from './reducers';
+import NavBar from './components/Navigation/Navbar';
+
 require('./styles/main.scss');
 
-class HenryPaulino extends Component {
+class Root extends Component {
   render() {
     return (
-      <Container/>
+      <Router history={browserHistory}>
+        <Route path='/' component={HenryPaulino}>
+          <IndexRoute component={Home}/>
+        </Route>
+      </Router>
     );
   }
 }
 
 if (module.hot) module.hot.accept();
 
-render(
-  <Provider store={store}>
-    <HenryPaulino/>
-  </Provider>,
-  document.getElementById('app')
-);
+render(<Root/>, document.getElementById('app'));
