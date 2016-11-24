@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   right: 0;
+  text-align: center;
 
   ul {
     display: flex;
@@ -12,13 +13,15 @@
 
   li {
     a {
-      padding: 8px 16px 8px 16px;
+      padding: 8px 14px 5px 14px;
       text-decoration: none;
       color: white;
       display: block;
       margin: 0;
       font-family: 'Montserrat', sans-serif;
     }
+
+    a:hover {@extend .active}
   }
 
 }
