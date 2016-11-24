@@ -14,12 +14,12 @@
   li {
     margin-right: 1px;
     a {
-      padding: 8px 14px 5px 14px;
+      padding: 8px 10px 5px 10px;
       text-decoration: none;
       color: white;
       display: block;
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
     }
 
     a:hover {@extend .active}
@@ -30,5 +30,5 @@
 .active {
   border-bottom-color: white;
   border-bottom-style: solid;
-  border-bottom-width: 3px;
+  border-bottom-width: 2px;
 }

@@ -1,6 +1,12 @@
 @import 'home';
 @import 'navbar';
+@import 'about';
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 
 .container {
   display: flex;
@@ -20,4 +26,13 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.heading {
+  display: flex;
+  font-size: 22px;
+  color: white;
+  font-family: 'Playfair Display', serif;
 }

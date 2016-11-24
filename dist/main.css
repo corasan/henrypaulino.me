@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Damion");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 .home-container {
   display: flex;
   flex-direction: column;
@@ -11,19 +12,50 @@
 
 .name-title {
   color: #F20732;
-  font-size: 66px;
+  font-size: 80px;
   font-weight: normal;
-  font-family: 'Damion', cursive;
+  font-family: 'Great Vibes', cursive;
   margin: 0; }
 
 .subtitle {
-  font-size: 30px;
+  font-size: 28px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: normal;
   color: white;
   margin: 0; }
 
-.app-container {
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: center; }
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 0; }
+  .nav li {
+    margin-right: 1px; }
+    .nav li a {
+      padding: 8px 10px 5px 10px;
+      text-decoration: none;
+      color: white;
+      display: block;
+      margin: 0;
+      font-size: 20px; }
+
+.active, .nav li a:hover {
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 2px; }
+
+.about-me {
+  justify-content: flex-start; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+.container {
   display: flex;
   background-color: #001426;
   height: 100%;
@@ -33,3 +65,16 @@
   position: absolute;
   align-items: center;
   justify-content: center; }
+
+.content {
+  display: flex;
+  height: 88%;
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
+
+.heading {
+  display: flex;
+  font-size: 22px;
+  color: white;
+  font-family: 'Playfair Display', serif; }
