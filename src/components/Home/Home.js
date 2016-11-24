@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 export default class Home extends Component {
   componentDidMount() {
-    TweenMax.from('.name-title', 4, {opacity: 0});
-    TweenMax.from('.subtitle', 4, {opacity: 0, delay: 1});
+    TweenMax.from('.name-title', 2.5, {opacity: 0, y: -100});
+    TweenMax.from('.subtitle', 3, {opacity: 0, delay: 1});
   }
 
   componentWillUnmount() {}

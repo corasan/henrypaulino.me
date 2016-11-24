@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import HenryPaulino from './components/app.js';
-import Home from './components/Home/Home';
 import NavBar from './components/Navigation/Navbar';
+import Home from './components/Home/Home';
+import About from './components/About/About';
 
 require('./styles/main.scss');
 
@@ -13,6 +14,8 @@ class Root extends Component {
       <Router history={browserHistory}>
         <Route path='/' component={HenryPaulino}>
           <IndexRoute component={Home}/>
+          <Route path="about" component={About}/>
+          {/* <Route path="/" component={Home}/> */}
         </Route>
       </Router>
     );

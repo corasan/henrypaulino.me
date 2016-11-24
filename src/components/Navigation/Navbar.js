@@ -7,8 +7,8 @@ export default class Navigator extends Component {
     return (
       <div className="nav">
         <ul>
-          <li><Link activeClassName="active" className="hover-link">About</Link></li>
-          <li><Link activeClassName="active" className="hover-link">Projects</Link></li>
+          <li><Link activeClassName="active" to="about">About</Link></li>
+          <li><Link activeClassName="active">Projects</Link></li>
         </ul>
       </div>
     );
