@@ -64,11 +64,11 @@
 
 	var _Navbar2 = _interopRequireDefault(_Navbar);
 
-	var _Home = __webpack_require__(231);
+	var _Home = __webpack_require__(232);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _About = __webpack_require__(232);
+	var _About = __webpack_require__(233);
 
 	var _About2 = _interopRequireDefault(_About);
 
@@ -80,7 +80,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	__webpack_require__(233);
+	__webpack_require__(234);
 
 	var Root = function (_Component) {
 	  _inherits(Root, _Component);
@@ -26418,6 +26418,10 @@
 
 	var _Navbar2 = _interopRequireDefault(_Navbar);
 
+	var _icons = __webpack_require__(231);
+
+	var _icons2 = _interopRequireDefault(_icons);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26446,7 +26450,8 @@
 	          'div',
 	          { className: 'content' },
 	          this.props.children
-	        )
+	        ),
+	        _react2.default.createElement(_icons2.default, null)
 	      );
 	    }
 	  }]);
@@ -26508,6 +26513,14 @@
 	  }
 
 	  _createClass(Navigator, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      TweenMax.from('.nav', 0.4, { opacity: 0, delay: 3 });
+	    }
+	  }, {
+	    key: 'componentWillUnmount',
+	    value: function componentWillUnmount() {}
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -26523,15 +26536,6 @@
 	              _reactRouter.Link,
 	              { activeClassName: 'active', to: 'about' },
 	              'About'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { activeClassName: 'active' },
-	              'Projects'
 	            )
 	          )
 	        )
@@ -43668,6 +43672,80 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	var Icons = function (_Component) {
+	  _inherits(Icons, _Component);
+
+	  function Icons() {
+	    _classCallCheck(this, Icons);
+
+	    return _possibleConstructorReturn(this, (Icons.__proto__ || Object.getPrototypeOf(Icons)).apply(this, arguments));
+	  }
+
+	  _createClass(Icons, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      TweenMax.from('#icons', 0.4, { opacity: 0, delay: 3 });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { id: 'icons' },
+	        _react2.default.createElement('img', { src: '../../../dist/icons/Behance_2.svg', className: 'icon' }),
+	        _react2.default.createElement('img', { src: '../../../dist/icons/Github.svg', className: 'icon' }),
+	        _react2.default.createElement('img', { src: '../../../dist/icons/LinkedIn.svg', className: 'icon' }),
+	        _react2.default.createElement('img', { src: '../../../dist/icons/Twitter.svg', className: 'icon' }),
+	        _react2.default.createElement('img', { src: '../../../dist/icons/WordPress.svg', className: 'icon' })
+	      );
+	    }
+	  }]);
+
+	  return Icons;
+	}(_react.Component);
+
+	exports.default = Icons;
+	;
+
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+
+	  __REACT_HOT_LOADER__.register(Icons, 'Icons', 'C:/Users/Henry/Documents/Github/henrypaulino.me/src/components/Home/icons.js');
+	}();
+
+	;
+
+/***/ },
+/* 232 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _icons = __webpack_require__(231);
+
+	var _icons2 = _interopRequireDefault(_icons);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var Home = function (_Component) {
 	  _inherits(Home, _Component);
 
@@ -43681,7 +43759,7 @@
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
 	      TweenMax.from('.name-title', 2.5, { opacity: 0, y: -100 });
-	      TweenMax.from('.subtitle', 3, { opacity: 0, delay: 1 });
+	      TweenMax.from('.subtitle', 3, { opacity: 0, delay: 2 });
 	    }
 	  }, {
 	    key: 'componentWillUnmount',
@@ -43726,10 +43804,10 @@
 	;
 
 /***/ },
-/* 232 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -43760,21 +43838,79 @@
 	  }
 
 	  _createClass(About, [{
-	    key: "render",
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      TweenMax.from('.about-me', 1.5, { opacity: 0, x: 600 });
+	    }
+	  }, {
+	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "div",
-	        null,
+	        'div',
+	        { className: 'about-me' },
 	        _react2.default.createElement(
-	          "div",
-	          { className: "heading" },
+	          'div',
+	          { className: 'heading' },
 	          _react2.default.createElement(
-	            "h1",
+	            'h1',
 	            null,
-	            "About me"
+	            'About me'
 	          )
 	        ),
-	        _react2.default.createElement("div", { className: "aboutme-content" })
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'about-me-content' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'column-one' },
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'highlighter' },
+	                'I\'m a passionate Front End Developer '
+	              ),
+	              'from Dominican Republic living in NYC; With a background in Ruby on Rails back end development, my strength lies in the front end and the vast world of JavaScript.'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'I focus mainly on learning new technologies, libraries, and expanding my knowledge of JavaScript. I like to work in the ',
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'highlighter' },
+	                'Node.js'
+	              ),
+	              ' environment and I love everything',
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'highlighter' },
+	                ' React.'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'column-two' },
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'I like to spend my free time coding, watching TV shows (The Office, forever my favorite), watching a movie, listening music, cooking, playing League of Legends, running, and hanging out with family.'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'If you would like to know more about me, my projects, or my front end ninja skills, please feel free to send me an email at: ',
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'highlighter' },
+	                'henrypl360@gmail.com'
+	              ),
+	              '.'
+	            )
+	          )
+	        )
 	      );
 	    }
 	  }]);
@@ -43790,22 +43926,22 @@
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(About, "About", "C:/Users/Henry/Documents/Github/henrypaulino.me/src/components/About/About.js");
+	  __REACT_HOT_LOADER__.register(About, 'About', 'C:/Users/Henry/Documents/Github/henrypaulino.me/src/components/About/About.js');
 	}();
 
 	;
 
 /***/ },
-/* 233 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(234);
+	var content = __webpack_require__(235);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(236)(content, {});
+	var update = __webpack_require__(237)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -43822,23 +43958,23 @@
 	}
 
 /***/ },
-/* 234 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(235)();
+	exports = module.exports = __webpack_require__(236)();
 	// imports
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Great+Vibes);", ""]);
-	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Montserrat);", ""]);
+	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Poppins);", ""]);
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Playfair+Display);", ""]);
 
 	// module
-	exports.push([module.id, ".home-container {\n  display: flex;\n  flex-direction: column;\n  height: 90%;\n  width: 90%;\n  align-items: center;\n  justify-content: center;\n  text-align: center; }\n\n.name-title {\n  color: #F20732;\n  font-size: 80px;\n  font-weight: normal;\n  font-family: 'Great Vibes', cursive;\n  margin: 0; }\n\n.subtitle {\n  font-size: 28px;\n  font-family: 'Montserrat', sans-serif;\n  font-weight: normal;\n  color: white;\n  margin: 0; }\n\n.nav {\n  position: fixed;\n  top: 0;\n  right: 0;\n  text-align: center; }\n  .nav ul {\n    display: flex;\n    flex-direction: row;\n    list-style-type: none;\n    margin-top: 0; }\n  .nav li {\n    margin-right: 1px; }\n    .nav li a {\n      padding: 8px 10px 5px 10px;\n      text-decoration: none;\n      color: white;\n      display: block;\n      margin: 0;\n      font-size: 20px; }\n\n.active, .nav li a:hover {\n  border-bottom-color: white;\n  border-bottom-style: solid;\n  border-bottom-width: 2px; }\n\nbody {\n  font-family: 'Montserrat', sans-serif; }\n\n.container {\n  display: flex;\n  background-color: #001426;\n  height: 100%;\n  width: 100%;\n  left: 0;\n  top: 0;\n  position: absolute;\n  align-items: center;\n  justify-content: center; }\n\n.content {\n  display: flex;\n  height: 88%;\n  width: 100%;\n  align-items: center;\n  justify-content: center; }\n\n.heading {\n  display: flex;\n  font-size: 22px;\n  color: white;\n  font-family: 'Playfair Display', serif; }\n", ""]);
+	exports.push([module.id, ".home-container {\n  display: flex;\n  flex-direction: column;\n  height: 90%;\n  width: 90%;\n  align-items: center;\n  justify-content: center;\n  text-align: center; }\n\n.name-title {\n  color: #F20732;\n  font-size: 80px;\n  font-weight: normal;\n  font-family: 'Great Vibes', cursive;\n  margin: 0; }\n\n.subtitle {\n  font-size: 28px;\n  font-family: 'Montserrat', sans-serif;\n  font-weight: normal;\n  color: white;\n  margin: 0; }\n\n.nav {\n  position: fixed;\n  top: 0;\n  right: 0;\n  text-align: center;\n  background-color: rgba(0, 20, 38, 0.8);\n  width: 100%;\n  z-index: 1; }\n  .nav ul {\n    display: flex;\n    flex-direction: row;\n    list-style-type: none;\n    justify-content: flex-end;\n    margin-top: 0;\n    margin-right: 20px; }\n  .nav li {\n    margin-right: 1px; }\n    .nav li a {\n      padding: 8px 10px 2px 10px;\n      text-decoration: none;\n      color: white;\n      display: block;\n      margin: 0;\n      font-size: 20px;\n      height: 28px; }\n\n.active, .nav li a:hover {\n  border-bottom-color: white;\n  border-bottom-style: solid;\n  border-bottom-width: 2px; }\n\n.about-me {\n  display: flex;\n  justify-content: center;\n  align-items: flex-start;\n  flex-direction: column;\n  width: 100%;\n  height: 100%;\n  padding-left: 170px;\n  padding-right: 170px; }\n\n.about-me-content {\n  display: flex;\n  font-size: 12px;\n  color: #BDC6D6; }\n\n.about-me-content > div {\n  max-width: 50%;\n  padding-left: 14px;\n  padding-right: 14px; }\n\n.column-one {\n  margin-right: 50px; }\n\n.highlighter {\n  font-weight: bold;\n  color: white;\n  font-size: 14px; }\n\n@media screen and (max-width: 560px) {\n  .about-me-content {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%; }\n  .about-me-content > div {\n    max-width: 100%;\n    padding-left: 0;\n    padding-right: 0; }\n  .column-one {\n    margin-right: 0; } }\n\nbody {\n  font-family: 'Poppins', sans-serif;\n  letter-spacing: 1.2px;\n  background-color: #001426; }\n\n.icon {\n  width: 30px;\n  height: 30px;\n  padding: 0 8px 0 8px; }\n\n.container {\n  display: flex;\n  min-height: 100%;\n  min-width: 100%;\n  left: 0;\n  top: 0;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column; }\n\n.heading {\n  display: flex;\n  font-size: 22px;\n  color: white;\n  font-family: 'Playfair Display', serif;\n  padding: 10px; }\n\n@media screen and (max-width: 560px) {\n  .content {\n    padding-left: 16px;\n    padding-right: 16px; }\n  .container {\n    position: relative; } }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 235 */
+/* 236 */
 /***/ function(module, exports) {
 
 	/*
@@ -43894,7 +44030,7 @@
 
 
 /***/ },
-/* 236 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
