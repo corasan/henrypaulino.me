@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.dev.js",
+    "start": "webpack && gulp && node server.js",
+    "start-nobuild": "node server.js",
+    "start-dev": "node server.dev.js",
     "build": "webpack && gulp"
   },
   "repository": {
