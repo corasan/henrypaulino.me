@@ -4,9 +4,10 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
-app.set('views', '.');
+app.set('views', './');
 
 app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/dist/icons'));
 
 app.get('*', function(req, res) {
   res.render('index');
