@@ -2,12 +2,11 @@
 
 .home-container {
   display: flex;
-  flex-direction: column;
-  height: 90%;
+  height: 88%;
   width: 100%;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .name-title {
@@ -24,6 +23,7 @@
   font-weight: normal;
   color: white;
   margin: 0;
+  text-align: center;
 }
 
 @media screen and (max-width: 560px) {

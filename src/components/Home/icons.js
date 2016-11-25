@@ -8,11 +8,11 @@ export default class Icons extends Component {
   render() {
     return (
       <div id="icons">
-        <img src="../../../dist/icons/Behance_2.svg" className="icon"/>
-        <img src="../../../dist/icons/GitHub.svg" className="icon"/>
-        <img src="../../../dist/icons/LinkedIn.svg" className="icon"/>
-        <img src="../../../dist/icons/Twitter.svg" className="icon"/>
-        <img src="../../../dist/icons/WordPress.svg" className="icon"/>
+        <img src="../../../dist/icons/Behance_2.png" className="icon"/>
+        <img src="../../../dist/icons/GitHub.png" className="icon"/>
+        <img src="../../../dist/icons/LinkedIn.png" className="icon"/>
+        <img src="../../../dist/icons/Twitter.png" className="icon"/>
+        <img src="../../../dist/icons/WordPress.png" className="icon"/>
       </div>
     )
   }
