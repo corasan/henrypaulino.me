@@ -1,5 +1,47 @@
 .about-me {
-  justify-content: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
   width: 100%;
   height: 100%;
+}
+
+.about-me-content {
+  display: flex;
+  font-size: 12px;
+  color: #BDC6D6;
+}
+
+.about-me-content > div {
+  max-width: 50%;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.column-one {
+  margin-right: 50px;
+}
+
+.highlighter {
+  font-weight: bold;
+  color: white;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 560px) {
+  .about-me-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .about-me-content > div {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .column-one {
+    margin-right: 0;
+  }
 }

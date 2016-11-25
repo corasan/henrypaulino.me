@@ -1,16 +1,17 @@
 @import 'home';
 @import 'navbar';
 @import 'about';
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.2px;
+  background-color: #001426;
 }
 
 .container {
   display: flex;
-  background-color: #001426;
   height: 100%;
   width: 100%;
   left: 0;
@@ -26,8 +27,8 @@ body {
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 145px;
+  padding-left: 145px;
 }
 
 .heading {
@@ -35,4 +36,19 @@ body {
   font-size: 22px;
   color: white;
   font-family: 'Playfair Display', serif;
+  padding: 10px;
+}
+
+@media screen and (max-width: 560px) {
+  .content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
