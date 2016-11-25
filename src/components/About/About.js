@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class About extends Component {
   componentDidMount() {
-    TweenMax.from('.about-me', 2, {opacity: 0, x: 600});
+    TweenMax.from('.about-me', 1.5, {opacity: 0, x: 600});
   }
 
   render() {
