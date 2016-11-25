@@ -10,25 +10,21 @@ body {
   background-color: #001426;
 }
 
-.container {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
+.icon {
+  width: 30px;
+  height: 30px;
+  padding: 0 8px 0 8px;
 }
 
-.content {
+.container {
   display: flex;
-  height: 88%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
   align-items: center;
   justify-content: center;
-  padding-right: 145px;
-  padding-left: 145px;
+  flex-direction: column;
 }
 
 .heading {
@@ -44,11 +40,14 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .container {
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 900px) {
-  .content {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
+  // .container {
+  //   padding-left: 80px;
+  //   padding-right: 80px;
+  // }
 }

@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 export default class Navigator extends Component {
   componentDidMount() {
-    TweenMax.from('.nav', 0.3, {opacity: 0, delay: 3});
+    TweenMax.from('.nav', 0.4, {opacity: 0, delay: 3});
   }
 
   componentWillUnmount() {}
@@ -14,7 +14,7 @@ export default class Navigator extends Component {
       <div className="nav">
         <ul>
           <li><Link activeClassName="active" to="about">About</Link></li>
-          <li><Link activeClassName="active">Projects</Link></li>
+          {/* <li><Link activeClassName="active">Projects</Link></li> */}
         </ul>
       </div>
     );

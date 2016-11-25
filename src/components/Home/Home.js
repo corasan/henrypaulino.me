@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Icons from './icons';
 
 export default class Home extends Component {
   componentDidMount() {
@@ -6,7 +7,7 @@ export default class Home extends Component {
     TweenMax.from('.subtitle', 3, {opacity: 0, delay: 2});
   }
 
-  // componentWillUnmount() {}
+  componentWillUnmount() {}
 
   render() {
     return (
