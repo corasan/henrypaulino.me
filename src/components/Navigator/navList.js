@@ -5,7 +5,7 @@ import { renderComponent } from '../../actions';
 const NavList = ({dispatch}) => {
   return (
     <ul>
-      <li><a href="#" onClick={() => dispatch(renderComponent('About'))}>About</a></li>
+      <li><a onClick={() => dispatch(renderComponent(routes.about))}>About</a></li>
       <li><a href="#" onClick={() => dispatch(renderComponent('Projects'))}>Projects</a></li>
     </ul>
   );
