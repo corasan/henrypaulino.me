@@ -43658,7 +43658,7 @@
 /* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -43682,8 +43682,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var iconPath = process.env.NODE_ENV === 'production' ? '/icons' : '../../dist/icons';
 
 	var Icons = exports.Icons = function (_Component) {
 	  _inherits(Icons, _Component);
@@ -43711,27 +43709,27 @@
 	        _react2.default.createElement(
 	          'a',
 	          { target: '_blank', href: 'https://www.behance.net/corasan360' },
-	          _react2.default.createElement('img', { src: iconPath + '/Behance_2.png', className: 'icon' })
+	          _react2.default.createElement('img', { src: 'https://s3.amazonaws.com/henrypaulino/icons/Behance_2.png', className: 'icon' })
 	        ),
 	        _react2.default.createElement(
 	          'a',
 	          { target: '_blank', href: 'https://github.com/corasan' },
-	          _react2.default.createElement('img', { src: iconPath + '/GitHub.png', className: 'icon' })
+	          _react2.default.createElement('img', { src: 'https://s3.amazonaws.com/henrypaulino/icons/GitHub.png', className: 'icon' })
 	        ),
 	        _react2.default.createElement(
 	          'a',
 	          { target: '_blank', href: 'https://www.linkedin.com/in/henrypl95' },
-	          _react2.default.createElement('img', { src: iconPath + '/LinkedIn.png', className: 'icon' })
+	          _react2.default.createElement('img', { src: 'https://s3.amazonaws.com/henrypaulino/icons/LinkedIn.png', className: 'icon' })
 	        ),
 	        _react2.default.createElement(
 	          'a',
 	          { target: '_blank', href: 'https://twitter.com/henrypl95' },
-	          _react2.default.createElement('img', { src: iconPath + '/Twitter.png', className: 'icon' })
+	          _react2.default.createElement('img', { src: 'https://s3.amazonaws.com/henrypaulino/icons/Twitter.png', className: 'icon' })
 	        ),
 	        _react2.default.createElement(
 	          'a',
 	          { target: '_blank', href: 'https://henrypl95.wordpress.com/' },
-	          _react2.default.createElement('img', { src: iconPath + '/WordPress-50.png', className: 'icon' })
+	          _react2.default.createElement('img', { src: 'https://s3.amazonaws.com/henrypaulino/icons/WordPress-50.png', className: 'icon' })
 	        )
 	      );
 	    }
@@ -43778,15 +43776,12 @@
 	    return;
 	  }
 
-	  __REACT_HOT_LOADER__.register(iconPath, 'iconPath', 'C:/Users/Henry/Documents/Github/henrypaulino.me/src/components/footer.js');
-
 	  __REACT_HOT_LOADER__.register(Icons, 'Icons', 'C:/Users/Henry/Documents/Github/henrypaulino.me/src/components/footer.js');
 
 	  __REACT_HOT_LOADER__.register(NameBrand, 'NameBrand', 'C:/Users/Henry/Documents/Github/henrypaulino.me/src/components/footer.js');
 	}();
 
 	;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
 /* 232 */
