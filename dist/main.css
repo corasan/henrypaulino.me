@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Great+Vibes");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes");
 .home-container {
   display: flex;
   height: 88%;
@@ -109,9 +109,16 @@ body {
   background-color: #001426; }
 
 .icon {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   padding: 0 8px 0 8px; }
+
+#name-brand {
+  text-decoration: none;
+  color: #F20732;
+  font-size: 22px;
+  font-weight: normal;
+  font-family: 'Great Vibes', cursive; }
 
 .container {
   display: flex;
@@ -127,8 +134,8 @@ body {
 .content {
   display: flex;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 160px;
+  padding-right: 160px;
   height: 88%; }
 
 .heading {
