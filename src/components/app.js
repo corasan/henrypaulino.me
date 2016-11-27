@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from './Navigation/Navbar';
-import Icons from './Home/icons';
+import { Icons, NameBrand } from './footer';
 
 export default class App extends Component {
   render() {
@@ -12,7 +12,7 @@ export default class App extends Component {
           {this.props.children}
         </div>
 
-        <Icons/>
+        {this.props.location.pathname === '/' ? <Icons/> : <NameBrand/>}
       </div>
     )
   }

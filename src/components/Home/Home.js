@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Icons from './icons';
 
 export default class Home extends Component {
   componentDidMount() {
