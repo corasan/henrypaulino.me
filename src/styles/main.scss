@@ -12,12 +12,13 @@ body {
 }
 
 .icon {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   padding: 0 8px 0 8px;
 }
 
-.name-brand {
+#name-brand {
+  text-decoration: none;
   color: #F20732;
   font-size: 22px;
   font-weight: normal;
