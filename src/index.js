@@ -15,7 +15,6 @@ class Root extends Component {
         <Route path='/' component={HenryPaulino}>
           <IndexRoute component={Home}/>
           <Route path="about" component={About}/>
-          {/* <Route path="/" component={Home}/> */}
         </Route>
       </Router>
     );

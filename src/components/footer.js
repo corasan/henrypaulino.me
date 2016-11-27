@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 const iconPath = process.env.NODE_ENV === 'production' ? '/icons' : '../../dist/icons';
 
 export class Icons extends Component {
-  componentDidMount() {
-    TweenMax.from('#icons', 0.4, {opacity: 0, delay: 3});
-  }
-
   componentWillUnmount() {}
 
   render() {
@@ -23,6 +19,8 @@ export class Icons extends Component {
 
 
 export class NameBrand extends Component {
+  componentWillUnmount() {}
+
   render() {
     return (
       <div className="name-brand">

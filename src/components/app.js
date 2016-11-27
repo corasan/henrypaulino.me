@@ -3,6 +3,10 @@ import NavBar from './Navigation/Navbar';
 import { Icons, NameBrand } from './footer';
 
 export default class App extends Component {
+  componentDidMount() {
+    TweenMax.from('.footer', 0.4, {opacity: 0, delay: 3});
+  }
+
   render() {
     return (
       <div className="container">
@@ -12,7 +16,9 @@ export default class App extends Component {
           {this.props.children}
         </div>
 
-        {this.props.location.pathname === '/' ? <Icons/> : <NameBrand/>}
+        <div className="footer">
+          {this.props.location.pathname === '/' ? <Icons/> : <NameBrand/>}
+        </div>
       </div>
     )
   }
