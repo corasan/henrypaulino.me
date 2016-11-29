@@ -21,17 +21,23 @@
 .contact-form > div > input {
   margin-right: 150px;
   width: 100%;
-  height: 30px;
+  height: 35px;
   margin-bottom: 46px;
   font-size: 16px;
   border-radius: 6px;
   padding-left: 10px;
   font-weight: bold;
   font-style: italic;
+  background-color: #CCCCCC;
+  border: 0;
+}
+
+::-webkit-input-placeholder {
+  color: #818282;
 }
 
 .contact-form > div > textarea {
-  height: 200px;
+  height: 198px;
   width: 100%;
   border-radius: 6px;
   padding-left: 10px;
@@ -39,6 +45,8 @@
   font-weight: bold;
   font-size: 16px;
   font-style: italic;
+  background-color: #CCCCCC;
+  border: 0;
 }
 .column-input {
   margin-right: 100px;
