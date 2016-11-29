@@ -1,6 +1,7 @@
 @import 'home';
 @import 'navbar';
 @import 'about';
+@import 'contact';
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
@@ -41,9 +42,10 @@ body {
 .content {
   display: flex;
   align-items: center;
-  padding-left: 160px;
-  padding-right: 160px;
+  // padding-left: 160px;
+  // padding-right: 160px;
   height: 88%;
+  width: 100%;
 }
 
 .heading {

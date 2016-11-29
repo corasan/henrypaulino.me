@@ -14,7 +14,7 @@ export default class Navigator extends Component {
       <div className="nav">
         <ul>
           <li><Link activeClassName="active" to="about">About</Link></li>
-          {/* <li><Link activeClassName="active">Projects</Link></li> */}
+          <li><Link activeClassName="active" to="contact">Contact</Link></li>
         </ul>
       </div>
     );
