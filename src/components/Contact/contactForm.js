@@ -38,7 +38,9 @@ export default class ContactForm extends Component {
             </div>
           </div>
 
-          <button type="submit">Send</button>
+          <div style={{display: 'flex', justifyContent: 'right'}}>
+            <button type="submit" className="submit-form">Send</button>
+          </div>
         </form>
       </div>
     );
